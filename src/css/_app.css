@@ -1,0 +1,43 @@
+body {
+  @apply pt-14 lg:pl-60;
+}
+
+#app {
+  @apply w-screen transition-position lg:w-auto;
+}
+
+#nav {
+  @apply lg:pl-60;
+}
+
+.dropdown {
+  @apply cursor-pointer;
+}
+
+.clipped, .clipped body {
+  @apply overflow-hidden;
+}
+
+.m-clipped, .m-clipped body {
+  @apply overflow-hidden lg:overflow-auto;
+}
+
+.mobile-aside-active #app, .mobile-aside-active #nav {
+  @apply ml-60 lg:ml-0;
+}
+
+.mobile-aside-right-active #app, .mobile-aside-right-active #nav {
+  @apply -ml-60 lg:ml-0;
+}
+
+.aside-compact body, .aside-compact #nav {
+  @apply lg:pl-20;
+}
+
+.aside-none body, .aside-none #nav {
+  @apply lg:pl-0;
+}
+
+.form-screen body {
+  @apply p-0;
+}

@@ -1,0 +1,117 @@
+html,  #aside, #aside-right {
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar, #aside::-webkit-scrollbar, #aside-right::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-thumb, #aside::-webkit-scrollbar-thumb, #aside-right::-webkit-scrollbar-thumb {
+  @apply rounded;
+}
+
+html {
+  @apply overflow-auto;
+  scrollbar-color: #9ca3af #e5e7eb;
+}
+
+html::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+
+html::-webkit-scrollbar-thumb {
+  @apply bg-gray-400;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+html.scrollbars-light {
+  scrollbar-color: #9ca3af #f3f4f6;
+}
+
+html.scrollbars-light::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+html.dark {
+  scrollbar-color: #374151 #111827;
+}
+
+html.dark::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+html.dark::-webkit-scrollbar-thumb {
+  @apply bg-gray-700;
+}
+
+html.dark::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
+
+#aside {
+  @apply overflow-auto;
+  /*overflow: overlay;*/
+  scrollbar-color: #4b5563 #111827;
+}
+
+#aside::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+#aside::-webkit-scrollbar-thumb {
+  @apply bg-gray-600;
+}
+
+.scrollbars-light #aside, .scrollbars-light #aside-right {
+  scrollbar-color: #d1d5db #f9fafb;
+}
+
+.scrollbars-light #aside::-webkit-scrollbar-track, .scrollbars-light #aside-right::-webkit-scrollbar-track {
+  @apply bg-gray-50;
+}
+
+.scrollbars-light #aside::-webkit-scrollbar-thumb, .scrollbars-light #aside-right::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+}
+
+.dark #aside {
+  scrollbar-color: #374151 #111827;
+}
+
+.dark #aside::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+.dark #aside::-webkit-scrollbar-thumb {
+  @apply bg-gray-700;
+}
+
+#aside-right {
+  @apply overflow-y-auto overflow-x-hidden;
+  overflow: overlay;
+  scrollbar-color: #d1d5db #f3f4f6;
+}
+
+#aside-right::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+#aside-right::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+}
+
+.dark #aside-right {
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+.dark #aside-right::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+.dark #aside-right::-webkit-scrollbar-thumb {
+  @apply bg-gray-600;
+}
